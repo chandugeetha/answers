@@ -1,0 +1,6 @@
+FROM python:3.11.6-alpine3.18
+RUN apt -update
+WORKDIR /black
+COPY ./black
+CMD [python,black.py]
+
